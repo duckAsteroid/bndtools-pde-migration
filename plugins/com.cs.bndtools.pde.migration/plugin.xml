@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+      		adaptable="true"
+            objectClass="org.eclipse.core.resources.IProject"
+            nameFilter="*"
+            id="com.cs.bndtools.pde.migration.contribution1">
+         <action
+               label="Migrate to BND"
+               class="com.cs.bndtools.pde.migration.popup.actions.MigrateAction"
+               menubarPath="additions"
+               enablesFor="+"
+               id="com.cs.bndtools.pde.migration.newAction">
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>
